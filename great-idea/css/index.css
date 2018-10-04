@@ -202,19 +202,24 @@ footer {
   font-size: 14px;
 }
 /* Services */
-
+.services {
+	/* display: flex; */
+	justify-content: row;
+}
 
 .services .services-header-img {
 	display: block;
 	margin: 30px 0;
-	
+
 }
 
 .services h1 {
 	font-size: 20px;
+	margin: 20px 0;
 }
 
 .services .services-info {
+	
 	margin-bottom: 20px;
 	padding-bottom: 30px;
 	border-bottom: 1px solid black;
@@ -225,7 +230,9 @@ footer {
 .main-content-serv {
 	display:flex;
 	flex-wrap: wrap;
-	border: 1px solid red;
+	flex-direction : row;
+	justify-content: space-between;
+	
 }
 
 .main-content-serv h1 {
@@ -233,8 +240,44 @@ footer {
 }
 
 .main-content-serv .box {
-	justify-content: row;
-	width: 400px;
-	height:400px;
-	border: 1px solid red;
+	
+	width: 420px;
+	height:250px;
+	border: 1px solid black;
+	margin: 40px 0;
+	background: rgb(223, 219, 219);
+	padding: 10px;
+}
+
+.main-content-serv .button {
+	display: block;
+	background: white;
+	width: 180px;
+	margin: 30px 0;
+	padding: 8px 40px;
+	font-size: 17px;
+	border: 1px solid black;
+	cursor: pointer;
+	border-radius: 5%;
+	
+}
+
+/* Facts */
+
+.facts {
+	border-top: 1px solid black;
+	display: flex;
+}
+
+.facts p{
+	margin: 20px 20px 20px 0;
+}
+
+.facts section-box {
+	width: 200px;
+	height: 200px;
+	display: flex;
+}
+.facts .facts-info-img {
+	margin: 20px 0;
 }
